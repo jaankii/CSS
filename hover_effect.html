@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style>
+		.main
+		{
+			height: 80px;
+			width: 200px;
+			background: lightblue;
+			text-align: center;
+			line-height: 80px;
+			font-size: 20px;
+			font-weight: bolder;
+			margin: 100px auto;
+			position: relative;
+			overflow: hidden;
+		}
+		.effect
+		{
+			height: 80px;
+			width: 200px;
+			background: linear-gradient(pink,yellow);
+			position: absolute;
+			top: 0;
+			left: -100%;
+			transition: 1s;
+		}
+		.main:hover .effect
+		{
+			left: 0;
+		}
+	</style>
+</head>
+<body>
+	<div class="main">
+		hover me
+		<div class="effect"></div>
+	</div>
+</body>
+</html>
