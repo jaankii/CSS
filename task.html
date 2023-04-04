@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style>
+		*{margin: 0; padding: 0;}
+		.nav
+		{
+			height: 50px;
+			background: lightcoral;
+			text-align: center;
+			display: flex;
+		}
+		.nav ul 
+		{
+			margin: auto;
+			display: inline;
+			
+		}
+		
+		.nav a 
+		{ 
+			border: 2px solid black;
+			padding-inline: 30px;
+			text-decoration: none;
+			background: seagreen;
+		}
+		.submenu1
+		{
+			height: 300px;
+			width: 500px;
+			top: 100%;
+			left: 0;
+			background: lightcyan;
+			list-style: circle;
+			display: none;
+			
+		}
+		.1:hover .submenu1 
+		{
+			display: block;
+		}
+
+		
+	</style>
+
+</head>
+<body>
+	<div class="main">
+	<div class="nav">
+			<ul>
+				 <a href="" class="1">News</a>
+				 <a href="">Entertainment</a>
+				 <a href="">News</a>
+				 <a href="">News</a>
+
+			</ul>
+    </div>
+    <div class="submenu1">
+    	<ul>
+    		<li><a href="">fashion</a></li>
+    		<li><a href="">technology</a></li>
+		</ul>
+    </div>
+    </div>
+</body>
+</html>

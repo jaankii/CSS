@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style>
+		.nav 
+		{
+			height: 50px;
+			background: lightcoral;
+			margin: auto;
+			text-align: center;
+			line-height: 50px;
+		}
+		.nav ul 
+		{
+			margin: 0;
+			padding: 0;
+		}
+		.menu 
+		{
+			list-style: none;
+			display: inline;
+			position: relative;
+			margin-right: 30px;
+		}
+		a 
+		{
+			text-decoration: none;
+			font-size: 20px;
+			font-weight: bold;
+		}
+		.sub1 
+		{
+			list-style: none;
+			background: lightcyan;
+			width: 200px;
+			height: 300px;
+			display: block;
+			position: absolute;
+			top:100%;
+			left:0;
+			display: none;
+		}
+		.menu:hover .sub1 
+		{
+			display: block;
+		}
+	</style>
+</head>
+<body>
+	<div class="nav">
+		<ul>
+			<li class="menu"><a href="">News</a>
+				<ul class="sub1">
+					<li><a href="">fashion</a></li>
+					<li><a href="">technology</a></li>
+				</ul>
+			</li>
+
+			<li class="menu"><a href="">Entertainment</a>
+				<ul class="sub1">
+					<li><a href="">entertainment1</a></li>
+					<li><a href="">entertainment2</a></li>
+				</ul>
+			</li>
+
+
+			
+			<li class="menu"><a href="">News</a></li>
+			<li class="menu"><a href="">News</a></li>
+			
+
+		</ul>
+	</div>
+</body>
+</html>
