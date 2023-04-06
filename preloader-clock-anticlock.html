@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style>
+		*{
+			box-sizing: border-box;
+		}
+		body
+		{
+			background: linear-gradient(lightblue,lightpink);
+			background-attachment: fixed;
+		}
+		.x 
+		{
+			height: 150px;
+			width: 150px;
+			background: transparent;
+			margin: 150px auto;
+			border: 10px solid transparent;
+			border-top: 10px solid royalblue;
+			border-radius: 50%;
+			
+			padding: 12px;
+
+			animation: clock 1s linear infinite;
+		}
+		.y 
+		{
+			height: 100px;
+			width: 100px;
+			background: transparent;
+			
+			border: 10px solid transparent;
+			border-top: 10px solid cadetblue;
+			border-radius: 50%;
+			
+			padding: 15px;
+
+			animation: anti-clock 2s linear  infinite;
+		}
+		.z
+		{
+			height: 50px;
+			width: 50px;
+			background: transparent;
+			
+			border: 10px solid transparent;
+			border-top: 10px solid skyblue;
+			border-radius: 50%;
+			
+			animation: clock 3s linear infinite;
+		}
+
+		@keyframes clock
+		{
+			0%{transform: rotate(0deg);}
+			50%{transform: rotate(180deg)}
+			100%{transform: rotate(360deg);}
+
+			
+		}
+
+		@keyframes anti-clock
+		{
+			0%{transform: rotate(0deg);}
+			50%{transform: rotate(360deg);}
+			100%{transform: rotate(90deg);}
+			
+		}
+	</style>
+</head>
+<body>
+	<div class="x">
+		<div class="y">
+			<div class="z">
+				
+			</div>
+		</div>
+	</div>
+</body>
+</html>
