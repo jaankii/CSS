@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{box-sizing: border-box;}
+        .main
+        {
+            height: 300px;
+            width: 300px;
+            position: relative;
+            margin: 150px ;
+            margin-left: 150px;
+            background: lightcyan;
+        }
+        .face
+        {
+            height: 300px;
+            width: 300px;
+            background: yellow;
+            border: 3px solid black;
+            border-radius: 50%;
+            
+            position: absolute;
+        }
+        .eye1
+        {
+            height: 50px;
+            width: 70px;
+            background: white;
+            border: 2px solid black;
+            border-radius: 50%;
+            position: absolute;
+            top: 100px;
+            left: 40px;
+            
+        }
+        .eye1::after
+        {
+            content: "";
+            height: 50px;
+            width: 70px;
+            background: yellow;
+            
+            border-radius: 50%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            visibility: visible;
+            transform: translateY(1px);
+            animation: openeyes 2s linear ;
+        }
+
+        .eye2
+        {
+            height: 50px;
+            width: 70px;
+            background: white;
+            border: 2px solid black;
+            border-radius: 50%;
+            position: absolute;
+            top: 100px;
+            left: 180px;
+        }
+        .eye2::after
+        {
+            content: "";
+            height: 50px;
+            width: 70px;
+            background: yellow;
+            
+            border-radius: 50%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            visibility: visible;
+            
+            transform: translateY(1px);
+            animation: openeyes 2s linear;
+        }
+        .e1
+        {
+            height: 30px;
+            width: 30px;
+            background: black;
+            position: absolute;
+            top: 110px;
+            left: 79px;
+            border-radius: 50%;
+            opacity: 0;
+            animation: seee1 2s infinite;
+        }
+        .e2
+        {
+            height: 30px;
+            width: 30px;
+            background: black;
+            position: absolute;
+            top: 110px;
+            left: 220px;
+            border-radius: 50%;
+            opacity: 0;
+            
+            transition: 2s;
+            animation: seee2 2s infinite;
+        }
+
+        .smile 
+        {
+            height: 180px;
+            width: 180px;
+            background: transparent;
+            border-bottom: 10px solid red;
+            border-radius: 80%;
+            
+            position: absolute;
+            top: 90px;
+            left: 60px;
+        }
+
+        @keyframes openeyes
+        {
+            from{visibility: visible; transform: translateY(0);background: yellow;}
+            to{visibility: hidden;transform: translateY(-50px); background:transparent;}
+        }
+
+        @keyframes seee1 
+        {
+            from{opacity: 0; left: 79px;}
+            to{opacity: 1; left: 40px;}
+        }
+
+        @keyframes seee2 
+        {
+            from{opacity: 0; left: 220px;}
+            to{opacity: 1; left: 180px;}
+        }
+        
+        
+
+    </style>
+</head>
+<body>
+
+    <div class="main">
+        <div class="face"></div>
+        <div class="eye1"></div>
+        <div class="eye2"></div>
+        <div class="e1"></div>
+        <div class="e2"></div>
+
+        <div class="line1"></div>
+        <div class="line2"></div>
+
+        <div class="smile"></div>
+    </div>
+</body>
+</html>

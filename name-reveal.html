@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 
+        {
+            height: 50px;
+            width: 400px;
+            background: transparent;
+            text-align: center;
+            line-height: 50px;
+            position: relative;
+            color: black;
+            
+        }
+        h1::after
+        {
+            content: "";
+            height: 50px;
+            width: 400px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: white;
+            
+            animation: test 2s infinite;
+            
+        }
+        h1::before
+        {
+            content: "";
+            height: 50px;
+            width: 8px;
+            background: #000;
+            position: absolute;
+            top: 0;
+            left: 0;
+            animation: test1 0.5s infinite;
+            
+        }
+       
+        
+
+        @keyframes test
+        {
+            from{left: 0;}
+            to{left: 100%;}
+        }
+        @keyframes test1
+        {
+            from{background: #000; left: 0; }
+            to{background: #fff; left: 100%; }
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Hello..My Name Is Janki.
+    </h1>
+    
+</body>
+</html>

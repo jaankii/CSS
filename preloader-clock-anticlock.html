@@ -13,6 +13,13 @@
 			background: linear-gradient(lightblue,lightpink);
 			background-attachment: fixed;
 		}
+		.main 
+		{
+			height: 200px;
+			width: 200px;
+			background: #000;
+			
+		}
 		.x 
 		{
 			height: 150px;
@@ -24,6 +31,7 @@
 			border-radius: 50%;
 			
 			padding: 12px;
+			
 
 			animation: clock 1s linear infinite;
 		}
@@ -36,6 +44,7 @@
 			border: 10px solid transparent;
 			border-top: 10px solid cadetblue;
 			border-radius: 50%;
+			
 			
 			padding: 15px;
 
@@ -50,35 +59,38 @@
 			border: 10px solid transparent;
 			border-top: 10px solid skyblue;
 			border-radius: 50%;
-			
+			padding: 12px;
 			animation: clock 3s linear infinite;
+			
 		}
 
 		@keyframes clock
 		{
-			0%{transform: rotate(0deg);}
-			50%{transform: rotate(180deg)}
-			100%{transform: rotate(360deg);}
+			from{transform: rotate(0deg);}
+			
+			to{transform: rotate(360deg);}
 
 			
 		}
 
 		@keyframes anti-clock
 		{
-			0%{transform: rotate(0deg);}
-			50%{transform: rotate(360deg);}
-			100%{transform: rotate(90deg);}
+			from{transform: rotate(360deg);}
+			
+			to{transform: rotate(0deg);}
 			
 		}
 	</style>
 </head>
 <body>
+	
 	<div class="x">
 		<div class="y">
 			<div class="z">
 				
 			</div>
 		</div>
-	</div>
+	
+</div>
 </body>
 </html>
