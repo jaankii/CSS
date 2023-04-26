@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main 
+        {
+            height: 300px;
+            width: 300px;
+            background: rgb(255, 127, 80, 0.3);
+            margin: 100px auto;
+           
+            
+        }
+        .main span
+        {
+            height: 200px;
+            width: 200px;
+            display: block;
+            background: rgba(214, 36, 36, 0.34);
+            
+        }
+        .main span:first-child
+        {
+            background-color: rosybrown;
+        }
+
+        .main span::before 
+        {
+            content: "";
+            height: 200px;
+            width: 200px;
+            display: block;
+            background: rgba(214, 36, 36, 0.34);
+            float: right;
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="main">
+        <span></span>
+        <span></span>
+    </div>
+</body>
+</html>
