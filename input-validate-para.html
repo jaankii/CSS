@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    Name: <input type="text" id="nm" onblur="tst(nm,nmSpan,nmSpan1)">
+    <span id="nmSpan"></span>
+    <span id="nmSpan1"></span>
+    
+    <br><br>
+
+    Email: <input type="text" onblur="tst(em,emSpan,emSpan1)" id="em">
+    <span id="emSpan"></span>
+    <span id="emSpan1"></span>
+    <br><br>
+
+    
+
+    <script>
+
+       
+        function tst(c,y,z)
+        {
+
+            nm_exp =  /^[a-zA-Z]+$/;
+            em_exp = /^[0-9]+$/;
+ 
+
+            // document.write(c);
+            console.log(c);//nm em
+            console.log(c.value);//nm.value em.value
+
+            console.log(y);//nmSpan em
+            console.log(y.innerHTML);//nm.value em.value
+
+            if(c.value == "")
+            {
+                y.innerHTML =" * required...!";
+                y.style.color = "red";
+            }
+            else 
+            {
+                y.innerHTML ="";
+
+                
+                    if(nm.value.match(nm_exp))
+                    {
+                        nmSpan1.innerHTML = "";
+                    }
+                    else 
+                    {
+                        nmSpan1.innerHTML = " Only Lettors..";
+                    }
+
+                    if(em.value.match(em_exp)) 
+                    {
+                        emSpan1.innerHTML = " "
+                    }
+                    else 
+                    {
+                        emSpan1.innerHTML = "Numbers Only..";
+                    }
+            }
+           
+        }
+        // tst(10)
+        // tst(1)
+        // tst(2)
+        
+    </script>
+    
+</body>
+</html>

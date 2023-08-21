@@ -1,0 +1,131 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box; 
+}
+body 
+{
+    background: green;
+}
+.main 
+{
+    height: 400px;
+    width: 500px;
+    margin: 100px auto;
+    background: lightgray;
+    border-radius: 10px;
+    padding-top: 25px;
+}
+.appleimage-section 
+{
+    height: 350px;
+    width: 200px;
+    background: lightgreen;
+    margin-left: -50px;
+    border-radius: 10px;
+    position: relative;
+    
+}
+.appleimage-section .iamge
+{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50px;
+    left: -50px;
+}
+.fourimage 
+{
+   height: 50px;
+   width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background: #fff;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.fourimage .i1
+{
+    height: 40px;
+    width: 40px;
+    margin: 5px;
+    border: 1px solid;
+}
+.textsection 
+{
+    position: absolute; 
+    top: 20%;
+    left: 45%;
+}
+.textsection .delicious 
+{
+    margin-top: 40px;
+}
+.textsection .delicious h4
+{
+    font-size: 20px;
+}
+.textsection .delicious p
+{
+    color: gray;
+    font-size: 15px;
+}
+.textsection .rs 
+{
+    margin-top: 10px;
+    color: red;
+}
+.textsection .rs span 
+{
+    font-size: 25px;
+}
+.textsection .selectcolor 
+{
+    margin-top: 10px;
+}
+.textsection .selectcolor p
+{
+    color: grey;
+}
+.textsection .selectcolor .imagesection 
+{
+    width: 180px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 5px;
+}
+.textsection .selectcolor .imagesection .c1
+{
+    height: 40px;
+    width: 40px;
+    border: 1px solid;
+}
+.textsection .benefits 
+{
+    margin-top: 10px;
+}
+.textsection .benefits p
+{
+    color: gray;
+}
+.textsection .benefits ul
+{
+    font-size: 15px;
+    margin-top: 10px;
+    line-height: 1.2;
+}
+.textsection .button 
+{
+    margin: 20px;
+}
+.textsection .button button
+{
+    height: 50px;
+    width: 150px;
+    text-align: center;
+    background: red;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+}
